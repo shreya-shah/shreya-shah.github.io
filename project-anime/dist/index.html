@@ -14,9 +14,10 @@
 <body>
     <header>
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-danger fixed-top">
+        <nav id="nav" class="navbar navbar-expand-lg navbar-dark bg-danger fixed-top">
             <a href="#" class="navbar-brand">Project Anime</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div id="collapsibleNavbar" class="collapse navbar-collapse">
@@ -121,7 +122,7 @@
                     </div>
                 </div>
                 <!-- Anime 4 -->
-                <div class="col-lg-4 col-md-6 col-sm-12 mx-auto">
+                <div class="col-lg-4 col-md-6 col-sm-12 d-sm-none mx-auto">
                     <div class="card">
                         <img src="images/code_geass.jpg" alt="Code Geass" class="card-img-top">
                         <div class="card-header text-center">
@@ -135,7 +136,7 @@
                     </div>
                 </div>
                 <!-- Anime 5 -->
-                <div class="col-lg-4 col-md-6 col-sm-12 mx-auto">
+                <div class="col-lg-4 col-md-6 col-sm-12 d-sm-none mx-auto">
                     <div class="card">
                         <img src="images/one_piece.jpg" alt="One Piece" class="card-img-top">
                         <div class="card-header text-center">
@@ -149,7 +150,7 @@
                     </div>
                 </div>
                 <!-- Anime 6 -->
-                <div class="col-lg-4 col-md-6 col-sm-12 mx-auto">
+                <div class="col-lg-4 col-md-6 col-sm-12 d-sm-none mx-auto">
                     <div class="card">
                         <img src="images/tokyo_ghoul.jpg" alt="Tokyo Ghoul" class="card-img-top">
                         <div class="card-header text-center">
@@ -164,7 +165,7 @@
                     </div>
                 </div>
                 <!-- Anime 7 -->
-                <div class="col-lg-4 col-md-6 col-sm-12 mx-auto">
+                <div class="col-lg-4 col-md-6 col-sm-12 d-sm-none mx-auto">
                     <div class="card">
                         <img src="images/bleach.jpg" alt="Bleach" class="card-img-top">
                         <div class="card-header text-center">
@@ -179,7 +180,7 @@
                     </div>
                 </div>
                 <!-- Anime 8 -->
-                <div class="col-lg-4 col-md-6 col-sm-12 mx-auto">
+                <div class="col-lg-4 col-md-6 col-sm-12 d-sm-none mx-auto">
                     <div class="card">
                         <img src="images/attack_on_titan.jpg" alt="Attack On Titan" class="card-img-top">
                         <div class="card-header text-center">
@@ -193,7 +194,7 @@
                     </div>
                 </div>
                 <!-- Anime 9 -->
-                <div class="col-lg-4 col-md-6 col-sm-12 mx-auto">
+                <div class="col-lg-4 col-md-6 col-sm-12 d-sm-none mx-auto">
                     <div class="card">
                         <img src="images/avatar.jpg" alt="Avatar" class="card-img-top">
                         <div class="card-header text-center">
@@ -208,13 +209,13 @@
                 </div>
             </div>
             <ul class="pagination justify-content-center">
-                <li class="page-item"><a href="#" class="page-link text-dark">&laquo</a></li>
+                <li class="page-item"><a href="#" class="page-link text-dark">&laquo;</a></li>
                 <li class="page-item"><a href="#" class="page-link text-dark">1</a></li>
                 <li class="page-item"><a href="#" class="page-link text-dark">2</a></li>
                 <li class="page-item"><a href="#" class="page-link text-dark">3</a></li>
                 <li class="page-item"><a href="#" class="page-link text-dark">4</a></li>
                 <li class="page-item"><a href="#" class="page-link text-dark">5</a></li>
-                <li class="page-item"><a href="#" class="page-link text-dark">&raquo</a></li>
+                <li class="page-item"><a href="#" class="page-link text-dark">&raquo;</a></li>
             </ul>
         </section>
         <!-- MyAnime List -->
@@ -284,7 +285,7 @@
                                 <i class="fa fa-envelope"></i>
                             </span>
                         </div>
-                        <input type="email" name="email" id="eml" class="form-control d-inline" placeholder="Email">
+                        <input type="email" name="email" id="leml" class="form-control d-inline" placeholder="Email">
                     </div>
                 </div>
                 <div class="form-group">
@@ -294,7 +295,7 @@
                                 <i class="fa fa-asterisk"></i>
                             </span>
                         </div>
-                        <input type="password" name="password" id="pass" class="form-control d-inline" placeholder="Password">
+                        <input type="password" name="password" id="lpass" class="form-control d-inline" placeholder="Password">
                     </div>
                 </div>
                 <button type="submit" class="btn btn-danger">Login</button>
@@ -321,7 +322,7 @@
                                             <i class="fa fa-user"></i>
                                         </span>
                                     </div>
-                                    <input type="username" name="username" id="unm" class="form-control d-inline" placeholder="Username">
+                                    <input type="text" name="username" id="unm" class="form-control d-inline" placeholder="Username">
                                 </div>
                             </div>
                             <div class="form-group">
@@ -331,7 +332,7 @@
                                             <i class="fa fa-envelope"></i>
                                         </span>
                                     </div>
-                                    <input type="email" name="email" id="eml" class="form-control d-inline" placeholder="Email">
+                                    <input type="email" name="email" id="reml" class="form-control d-inline" placeholder="Email">
                                 </div>
                             </div>
                             <div class="form-group">
@@ -341,7 +342,7 @@
                                             <i class="fa fa-asterisk"></i>
                                         </span>
                                     </div>
-                                    <input type="password" name="password" id="pass" class="form-control d-inline" placeholder="Password">
+                                    <input type="password" name="password" id="rpass" class="form-control d-inline" placeholder="Password">
                                 </div>
                             </div>
                             <button type="submit" class="btn btn-danger">Register</button>
